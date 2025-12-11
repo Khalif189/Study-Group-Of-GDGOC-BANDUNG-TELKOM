@@ -1,0 +1,27 @@
+console.log("---Tiket Masuk Zoo---")
+let pengunjung = [{nama: "Kurt", Umur: 27},{nama: "Maul" Umur: 35},{nama: "Jackson" Umur: 10}];
+
+//Menentukan Harga tiket Normal
+let hargaTicket = 50000;
+for ( let i = 0 ; i < pengunjung. length; i++){
+    let namaPengunjung = pengunjung [i].nama;
+    let umur = pengunjung [i].nama;
+    let pesan = "";
+}
+
+//Percabangan
+
+if (umur < 5){
+    pesan = "free! Untuk balita";
+}else if (umur <= 12 ){
+    pesan = "Diskon 50% harga tiket : " +(hargaTicket / 2); // anak" diskon 50%
+}else if ( umur >= 60 ){
+    pesan = "diskon 30% harga tiket : " + (hargaTicket * 0.7);
+}else {
+    pesan = "harga normal" + hargaTicket; //dewasa bayar normal 
+}
+
+// menampilkan tiket ke console
+console.log("nama Pengunjung : ", namaPengunjung);
+console.log("Umur            : ",umur);
+console.log("Keterangan      : ",pesan);
